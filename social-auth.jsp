@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Facebook Login JavaScript Example</title>
+<title>Facebook Login</title>
 <meta charset="UTF-8">
 </head>
 <body>
@@ -19,7 +19,7 @@
       testAPI();
     } else {
       // The person is not logged into your app or we are unable to tell.
-      document.getElementById('status').innerHTML = 'Continue with Facebook';
+      document.getElementById('status').innerHTML = 'You can continue with Facebook!!!';
     }
   }
 
@@ -75,7 +75,7 @@
     FB.api('/me', function(response) {
       console.log('Successful login for: ' + response.name);
       document.getElementById('status').innerHTML =
-        'Thanks for logging in, ' + response.name + '!'+ '<br>This app has taken your Public Profile and Email';
+        'Thanks for logging in, ' + response.name + '!'+ '<br>This app has taken your Public Profile and Email!!';
     });
   }
 </script>
